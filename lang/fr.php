@@ -2,8 +2,9 @@
 
 global $_LANG;
 $_LANG = array();
+$_LANG['index_16a5ecb8bfbe4bc2b1e1ec637b2f24e3'] = 'transport gratuit à partir de 5 produits';
+$_LANG['index_29aa46cc3d2677c7e0f216910df600ff'] = 'Transport gratuit';
 $_LANG['index_8b1a9953c4611296a827abf8c47804d7'] = 'bonjour';
-$_LANG['index_ffde56f67c1c9253b4ede7cce83b3a9a'] = 'vcbcv vvcn cvcbvcnv vnnn cvbvcn cvcvn hhfhn  vcvn';
 $_LANG['live_edit_1b7c6a7f9b72974ede874b8fba9547a0'] = 'Ajouter ce module';
 $_LANG['live_edit_282f96c7d1ed98d24606d209dcad9842'] = 'Position du module enregistrée';
 $_LANG['live_edit_3c5b87f318f203adbfcc5d6a68959359'] = 'Impossible de charger la liste des modules';

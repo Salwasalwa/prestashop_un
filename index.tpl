@@ -30,15 +30,17 @@
 		</ul>
 	{/if}
 {/if}
+
 {if $cart_qties > 5}
-<h2>trans gratuit</h2>
+    <h2>{l s='Free shipping'}</h2>
 {else}
-<h2>plus de 5 produit trans gratuit</h2>
+    <h2>{l s='free shipping for 5 or more products'}</h2>
 {/if}
-<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
+
 {$meta_title}
+<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
 <p>{l s='Hello'}</p>
-<p>{l s='Date'}: {$smarty.now|date_format:"%b %e, %Y"}</p>
+<p>{l s='Date'}: {$smarty.now|date_format:"%e-%b-%Y"}</p>
 <p>{l|truncate:30 s='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}</p>
 
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
