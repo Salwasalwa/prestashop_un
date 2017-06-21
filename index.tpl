@@ -1,3 +1,4 @@
+{debug}
 {*
 * 2007-2016 PrestaShop
 *
@@ -28,8 +29,18 @@
 			{$HOOK_HOME_TAB}
 		</ul>
 	{/if}
-	<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
 {/if}
+{if $cart_qties > 5}
+<h2>trans gratuit</h2>
+{else}
+<h2>plus de 5 produit trans gratuit</h2>
+{/if}
+<div class="tab-content">{$HOOK_HOME_TAB_CONTENT}</div>
+{$meta_title}
+<p>{l s='Hello'}</p>
+<p>{l s='Date'}: {$smarty.now|date_format:"%b %e, %Y"}</p>
+<p>{l|truncate:30 s='Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'}</p>
+
 {if isset($HOOK_HOME) && $HOOK_HOME|trim}
 	<div class="clearfix">{$HOOK_HOME}</div>
 {/if}
